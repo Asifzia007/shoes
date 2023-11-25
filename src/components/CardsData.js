@@ -1,0 +1,268 @@
+const Cardsdata = [
+    {
+        id: 1,
+        category:"men",
+        rname: "NIKE Winflo 9 Shield Men's Weatherised Road Running Shoes",
+        imgdata: "https://m.media-amazon.com/images/I/711hmrJQrUL._SX625_.jpg",
+        brand: "Nike",
+        price: 9690,
+        rating: "3.8",
+        Style: "Running Shoes",
+        qnty:0
+    },
+    {
+        id: 2,
+        category:"men",
+        rname: "Adidas Mens Fluidflow 3.0 Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/61-s2WdhdwL._SY625_.jpg",
+        brand: "Adidas",
+        price: 5909,
+        rating: "4.1",
+        Style: "Low-Top",
+        qnty:0
+    },
+    {
+        id: 3,
+        category:"men",
+        rname: "Puma Mens Suede Classic Xxi Sneakers Suede Classic Xxi Sneakers",
+        imgdata: "https://m.media-amazon.com/images/I/61+m-pSfvqL._SY625_.jpg",
+        brand: "Puma",
+        price: 5865,
+        rating: "4.0",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 4,
+        category:"men",
+        rname: "NIKE Renew Elevate III Basketball Shoes",
+        imgdata: "https://m.media-amazon.com/images/I/51QQVPejZhL._SY625_.jpg",
+        brand: "Nike",
+        price: 7090,
+        rating: "3.9",
+        Style: "Basketball Shoes",
+        qnty:0
+    },
+    {
+        id: 5,
+        category:"men",
+        rname: "Puma Mens BMW MMS Kart Cat MidSneaker",
+        imgdata: "https://m.media-amazon.com/images/I/51Z7dsWwqLL._SY695_.jpg",
+        brand: "Puma",
+        price: 5169,
+        rating: "3.6",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 6,
+        category:"men",
+        rname: "U.S. POLO ASSN. Rowan Men's Lace-Up Mid Top Sneakers-(2FD23009R05)",
+        imgdata: "https://m.media-amazon.com/images/I/61soyjRFV7L._SY535_.jpg",
+        brand: "U.S. POLO ASSN.",
+        price: 5229,
+        rating: "3.9",
+        Style: "Casual",
+        qnty:0
+    },
+    {
+        id: 7,
+        category:"men",
+        rname: "Nike Mens Precision Vi Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/81CIkQfdUDL._SX625_.jpg",
+        brand: "Nike",
+        price: 5699,
+        rating: "4.2",
+        Style: "Walking",
+        qnty:0
+    },
+    {
+        id: 8,
+        category:"men",
+        rname: "Reebok Mens Running Shoes Sneaker",
+        imgdata: "https://m.media-amazon.com/images/I/81lm98FALOL._SX625_.jpg",
+        brand: "Reebok",
+        price: 5599,
+        rating: "3.9",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 9,
+        category:"men",
+        rname: "Puma Mens Explore Nitro Mid GTX Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/515paXMhZXL._SY695_.jpg",
+        brand: "Puma",
+        price: 14999,
+        rating: "4.2",
+        Style: "Running",
+        qnty:0
+    },
+    {
+        id: 10,
+        category:"men",
+        rname: "Adidas Mens Howzat Spike 20 Cricket Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/713ffRBnKCL._SX679_.jpg",
+        brand: "Adidas",
+        price: 6999,
+        rating: "4.0",
+        Style: "Low-Top",
+        qnty:0
+    },
+    {
+        id: 11,
+        category:"men",
+        rname: "U.S. POLO ASSN. Mens Cator Sneaker",
+        imgdata: "https://m.media-amazon.com/images/I/71Ss8aCI0bL._SX625_.jpg",
+        brand: "U.S. POLO ASSN.",
+        price: 5999,
+        rating: "3.8",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 12,
+        category:"men",
+        rname: "Adidas Grand Court Td Men Casual Sneakers",
+        imgdata: "https://m.media-amazon.com/images/I/51H7NpxXgxL._SX625_.jpg",
+        brand: "Adidas",
+        price: 5890,
+        rating: "4.2",
+        Style: "Low-Top",
+        qnty:0
+    },
+    {
+        id: 13,
+        category:"women",
+        rname: "Nike Womens WMNS Epic React Flyknit Running Shoes",
+        imgdata: "https://m.media-amazon.com/images/I/81S9hwpwWSL._SX625_.jpg",
+        brand: "Nike",
+        price: 9690,
+        rating: "3.8",
+        Style: "Running Shoes",
+        qnty:0
+    },
+    {
+        id: 14,
+        category:"women",
+        rname: "Puma Womens Stewie 2 WaterBasketball Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/515IlVKftuL._SY695_.jpg",
+        brand: "Puma",
+        price: 6999,
+        rating: "4.1",
+        Style: "Basketball",
+        qnty:0
+    },
+    {
+        id: 15,
+        category:"women",
+        rname: "Nike Womens WMNS React Miler 3 Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/41jTYleAArL._SY625_.jpg",
+        brand: "Nike",
+        price: 5899,
+        rating: "4.0",
+        Style: "Running",
+        qnty:0
+    },
+    {
+        id: 16,
+        category:"women",
+        rname: "Puma Unisex-Adult Solarsmash RctIndoor Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/513CIUa3skL._SY695_.jpg",
+        brand: "Puma",
+        price: 5039,
+        rating: "3.9",
+        Style: "Indoor",
+        qnty:0
+    },
+    {
+        id: 17,
+        category:"women",
+        rname: "Adidas Unisex-Adult Sl20.3 M Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/61kBZ9KO2yL._SX695_.jpg",
+        brand: "Adidas",
+        price: 11269,
+        rating: "3.9",
+        Style: "Flat",
+        qnty:0
+    },
+    {
+        id: 18,
+        category:"women",
+        rname: "Nike Womens W Air Max 90 FuturaRunning Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/816z6YI9rDL._SX575_.jpg",
+        brand: "Nike",
+        price: 13995,
+        rating: "3.9",
+        Style: "Running",
+        qnty:0
+    },
+    {
+        id: 19,
+        category:"women",
+        rname: "adidas Originals Women's Samoa, Black/St Pale Nude/Purple Tint,",
+        imgdata: "https://m.media-amazon.com/images/I/81i7EeqA2PL._SX625_.jpg",
+        brand: "Adidas",
+        price: 9699,
+        rating: "4.2",
+        Style: "Nmd_r1",
+        qnty:0
+    },
+    {
+        id: 20,
+        category:"women",
+        rname: "Nike Womens W Air Winflo 10 Running Shoe",
+        imgdata: "https://m.media-amazon.com/images/I/71YIxPp9ivL._SX575_.jpg",
+        brand: "Nike",
+        price: 7599,
+        rating: "3.9",
+        Style: "Running",
+        qnty:0
+    },
+    {
+        id: 21,
+        category:"women",
+        rname: "Reebok Womens Club C 85 White/ELEFLA/NEOBLU Sneaker - 7 UK (KXC99)",
+        imgdata: "https://m.media-amazon.com/images/I/61NQUiEN-HS._SY500_.jpg",
+        brand: "Reebok",
+        price: 7999,
+        rating: "4.2",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 22,
+        category:"women",
+        rname: "Puma Unisex-Adult Rs-x3 Puzzle Shoes Sneaker",
+        imgdata: "https://m.media-amazon.com/images/I/61Cf-Lmo7gL._SX675_.jpg",
+        brand: "Puma",
+        price: 5999,
+        rating: "4.0",
+        Style: "Sneaker",
+        qnty:0
+    },
+    {
+        id: 23,
+        category:"women",
+        rname: "adidas Ultraboost DNA Orchid Tint/White/Pink Tint 7.5 B (M)",
+        imgdata: "https://m.media-amazon.com/images/I/51oPLdqlt+L._SX625_.jpg",
+        brand: "Adidas",
+        price: 15999,
+        rating: "3.9",
+        Style: "Ultraboost Dna",
+        qnty:0
+    },
+    {
+        id: 24,
+        category:"women",
+        rname: "Nike Girl's React Miler Running Shoes",
+        imgdata: "https://m.media-amazon.com/images/I/51yLsUYF6TL._SX625_.jpg",
+        brand: "Nike",
+        price: 8890,
+        rating: "4.2",
+        Style: "Running",
+        qnty:0
+    },
+];
+
+export default Cardsdata;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
