@@ -2,11 +2,22 @@ import React, { useState } from 'react'
 import Cardsdata from './CardsData';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useDispatch } from 'react-redux';
+import { ADD } from '../redux/actions/action';
 
 
 const Men = () => {
-  const [query, setQuery] = useState("");
-  console.log(query.filter);
+  // const [query, setQuery] = useState("");
+  // console.log(query.filter);
+
+
+  const dispatch = useDispatch();
+
+  const send = (e)=>{
+    // console.log(e);
+    dispatch(ADD(e));
+  }
+
 
   const [data, setData] = useState(Cardsdata);
 
@@ -14,7 +25,7 @@ const Men = () => {
     <div className='mt-3 mb-3'>
       <h2 className='text-center' style={{ fontWeight: 800, fontFamily: "serif", fontSize: "40px", textDecoration:"underline" }}>Men <span style={{ color: "red" }}>S</span>hoes</h2>
       <div className='d-flex mx-2'>
-        <button style={{ width: "25%", height: "30px" }} onClick={(e) => setQuery(e.target.value)}>5000-6000</button>
+        {/* <button style={{ width: "25%", height: "30px" }} onClick={(e) => setQuery(e.target.value)}>5000-6000</button> */}
         <div className='row d-flex align-items-center justify-content-center'>
           {
 
@@ -37,7 +48,7 @@ const Men = () => {
                           Style: {element.Style}
                         </Card.Text>
                         <div className='button_div d-flex align-items-center justify-content-center'>
-                          <Button variant="primary" className='col-lg-12'>Add to cart</Button>
+                          <Button variant="primary" className='col-lg-12' onClick={()=> send(element)}>Add to cart</Button>
                         </div>
 
                       </Card.Body>

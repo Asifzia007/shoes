@@ -6,8 +6,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import cart from "./cart.gif"
 import shoes from "./shoes.jpg";
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+
+  const getdata = useSelector((state)=> state.cartreducer.carts);
+  console.log(getdata);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -40,7 +44,7 @@ const Header = () => {
           <Nav.Link href="/men" >Men</Nav.Link>
           <Nav.Link href="/women" >Women</Nav.Link>
      </Nav>
-       <Badge badgeContent={5} color="primary"
+       <Badge badgeContent={getdata.length} color="primary"
           id="basic-button"
           className='mx-5'
           aria-controls={open ? 'basic-menu' : undefined}

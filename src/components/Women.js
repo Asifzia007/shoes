@@ -2,11 +2,19 @@ import React, { useState } from 'react'
 import Cardsdata from './CardsData';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useDispatch } from 'react-redux';
+import { ADD } from '../redux/actions/action';
 
 
 const Women = () => {
-//  const [query, setQuery] = useState("");
-// console.log(element.filter)
+
+
+const dispatch = useDispatch();
+
+  const send = (e)=>{
+    // console.log(e);
+    dispatch(ADD(e));
+  }
 
     const [data, setData] = useState(Cardsdata);
     // console.log(data.category,"hii")
@@ -37,7 +45,7 @@ const Women = () => {
                     Style: {element.Style}
                     </Card.Text>
                     <div className='button_div d-flex align-items-center justify-content-center'>
-                    <Button variant="primary" className='col-lg-12'>Add to cart</Button>
+                    <Button variant="primary" className='col-lg-12' onClick={()=> send(element)}>Add to cart</Button>
                     </div>
                     
                   </Card.Body>
