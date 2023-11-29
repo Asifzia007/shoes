@@ -5,6 +5,7 @@ import womenshoes from "./womenshoes.jpg"
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+  
   return (
     <div>
      <div className='bg-img'>
@@ -27,7 +28,7 @@ const Home = () => {
       </Link>
         </div>
         <div className='women'>
-        <Link to={`/women`}>
+        <Link to={`/women`} >
         <Card style={{width:"24rem", border:"none"}} className='card_style mx-4'>
         <Card.Img variant="top" src={womenshoes} />
         <Card.Body>

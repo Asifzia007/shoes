@@ -24,7 +24,7 @@ const Cardsdata = [
     {
         id: 3,
         category:"men",
-        rname: "Puma Mens Suede Classic Xxi Sneakers Suede Classic Xxi Sneakers",
+        rname: "Puma Mens Suede Classic Xxi Sneakers ",
         imgdata: "https://m.media-amazon.com/images/I/61+m-pSfvqL._SY625_.jpg",
         brand: "Puma",
         price: 5865,
@@ -222,7 +222,7 @@ const Cardsdata = [
     {
         id: 21,
         category:"women",
-        rname: "Reebok Womens Club C 85 White/ELEFLA/NEOBLU Sneaker - 7 UK (KXC99)",
+        rname: "Reebok Womens Club C 85 White/ELEFLA/NEOBLU Sneaker ",
         imgdata: "https://m.media-amazon.com/images/I/61NQUiEN-HS._SY500_.jpg",
         brand: "Reebok",
         price: 7999,
@@ -244,7 +244,7 @@ const Cardsdata = [
     {
         id: 23,
         category:"women",
-        rname: "adidas Ultraboost DNA Orchid Tint/White/Pink Tint 7.5 B (M)",
+        rname: "adidas Ultraboost DNA Orchid Tint/White/Pink Tint ",
         imgdata: "https://m.media-amazon.com/images/I/51oPLdqlt+L._SX625_.jpg",
         brand: "Adidas",
         price: 15999,
